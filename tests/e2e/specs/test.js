@@ -5,4 +5,8 @@ describe("Standard User Interactions", () => {
     cy.visit("/");
     cy.contains("h1", "Curriculum Vitae");
   });
+  it("Displays a section", () => {
+    cy.visit("/");
+    cy.contains("h1", "Curriculum Vitae");
+  });
 });
