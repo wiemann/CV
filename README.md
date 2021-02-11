@@ -2,6 +2,8 @@
 
 Written as a Yaml file that includes Markdown. Rendered with the help of VueJS.
 
+![Deploy on merge](https://github.com/wiemann/CV/workflows/Deploy%20on%20merge/badge.svg)
+
 ## Project setup
 ```
 npm install
