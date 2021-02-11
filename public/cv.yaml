@@ -1,3 +1,16 @@
+name: Matthias Wiemann
+title: Web Developer / Software Engineer
+email: mat@wiemann.name
+phone: +49 170 79 77 79 1
+address: Munich, Germany
+timeZone: CET (Central European Time)
+timeZoneOffset: "+01:00"
+birthYear: 1977
+lastUpdate: February 2021
+picture:
+  src: /images/matthias_wiemann.jpg
+  width: 400
+  height: 532
 categories:
   - title: Work Experience
     items:
@@ -145,9 +158,13 @@ categories:
 
     - title: Toolset  
       description: "
-      - Desktop: Linux
+      - Workstation Operating System: Linux (onsite also Windows / MacOS)
+
       - IDE: Visual Studio Code (VSCode)
 
+      - SCM: Git
+
+      - Keyboard: Dvorak Layout
       "
 
   - title: Awards 
