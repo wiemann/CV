@@ -8,9 +8,10 @@ timeZoneOffset: "+01:00"
 birthYear: 1977
 lastUpdate: February 2021
 picture:
-  src: /images/matthias_wiemann.jpg
-  width: 400
-  height: 532
+  src: /images/matthias_wiemann_sd.jpg
+  srcHd: /images/matthias_wiemann_hd.jpg
+  width: 200
+  height: 200
 categories:
   - title: Work Experience
     items:

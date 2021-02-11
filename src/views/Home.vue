@@ -1,44 +1,57 @@
 <template>
   <div class="cv">
-    <h1>Curriculum Vitae</h1>
-    <img
-      class="profile-picture"
-      :src="data.picture.src"
-      :width="data.picture.width / 2"
-      :height="data.picture.height / 2"
-    />
-    <div class="h-card vcard">
-      <p class="p-name fn">{{ data.name }}</p>
-      <p class="title">{{ data.title }}</p>
-      <p class="email">
-        Mail: <a :href="`mailto:${data.email}`"> {{ data.email }}</a>
-      </p>
-      <p class="p-tel tel">
-        Phone: <a :href="`tel:${data.phone}`">{{ data.phone }}</a>
-      </p>
-      <p class="adr">Location: {{ data.address }}</p>
-      <p class="timezone">
-        Timezone: {{ data.timeZone
-        }}<span class="tz">{{ data.timeZoneOffset }}</span>
-      </p>
-      <p>Year of Birth: {{ data.birthYear }}</p>
-    </div>
-    <div
-      v-for="(category, index) in data.categories"
-      :key="index"
-      class="chapter"
-    >
-      <h2>{{ category.title }}</h2>
-      <Section
-        v-for="(item, index) in category.items"
+    <header>
+      <div class="intro">
+        <h1>Curriculum Vitae</h1>
+        <div class="h-card vcard">
+          <p class="p-name fn">{{ data.name }}</p>
+          <p class="title">{{ data.title }}</p>
+          <p class="email">
+            Mail: <a :href="`mailto:${data.email}`"> {{ data.email }}</a>
+          </p>
+          <p class="p-tel tel">
+            Phone: <a :href="`tel:${data.phone}`">{{ data.phone }}</a>
+          </p>
+          <p class="adr">Location: {{ data.address }}</p>
+          <p class="timezone">
+            Timezone: {{ data.timeZone
+            }}<span class="tz">{{ data.timeZoneOffset }}</span>
+          </p>
+          <p>Year of Birth: {{ data.birthYear }}</p>
+        </div>
+      </div>
+      <div class="profile-picture-holder">
+        <img
+          class="profile-picture"
+          :alt="data.name"
+          :title="data.name"
+          :src="data.picture.src"
+          :srcset="`${data.picture.src} 1x, ${data.picture.srcHd} 2x`"
+          :width="data.picture.width"
+          :height="data.picture.height"
+        />
+      </div>
+    </header>
+    <main>
+      <div
+        v-for="(category, index) in data.categories"
         :key="index"
-        :title="item.title"
-        :timeRange="item.timeRange"
+        class="chapter"
       >
-        {{ item.description }}
-      </Section>
-    </div>
-    <p class="last-update">Last update: {{ data.lastUpdate }}</p>
+        <h2>{{ category.title }}</h2>
+        <Section
+          v-for="(item, index) in category.items"
+          :key="index"
+          :title="item.title"
+          :timeRange="item.timeRange"
+        >
+          {{ item.description }}
+        </Section>
+      </div>
+    </main>
+    <footer>
+      <p class="last-update">Last update: {{ data.lastUpdate }}</p>
+    </footer>
   </div>
 </template>
 
@@ -79,10 +92,19 @@ export default class CV extends Vue {
     border-top: 1px solid black;
     text-align: right;
   }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .profile-picture {
+      border: 1px solid silver;
+      background: #eee;
+    }
+  }
 
   @media only screen and (min-width: 600px) {
-    .profile-picture {
-      float: right;
+    header {
+      flex-direction: row;
     }
   }
 }
