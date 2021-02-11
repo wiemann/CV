@@ -5,14 +5,16 @@ describe("Section.vue", () => {
   it("renders the element", () => {
     const wrapper = shallowMount(Section, {
       propsData: {
-        title: "Here goes the title"
+        title: "Here goes the title",
+        timeRange: "2030"
       },
       slots: {
         default: "This is the description."
       }
     });
 
-    expect(wrapper.find("h2").text()).toMatch("Here goes the title");
+    expect(wrapper.find("h3").text()).toMatch("Here goes the title");
     expect(wrapper.find(".main").text()).toMatch("This is the description.");
+    expect(wrapper.find(".time-range").text()).toMatch("2030");
   });
 });

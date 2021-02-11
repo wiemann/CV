@@ -1,0 +1,167 @@
+categories:
+  - title: Work Experience
+    items:
+      - timeRange: January 2017 - Now
+        description:
+          Work on prototypes for Interactive Data Visualisation with VueJS, React, Go (Google GoLang) and 
+          GraphQL, as well as CKAD certification.
+          
+          
+          Access to prototypes for demonstration purposes can be provided on demand.
+
+      - title: Senior Developer (ext.) – Data Visualization at Zürcher Kantonalbank (Zürich, Schweiz)
+        timeRange: March 2015 – December 2016
+        description: "
+          Concept and implementation of interactive data visualizations for Asset Management (> 100 bn. Swiss Francs in assets)
+          
+          Work in Agile / Scrum Team within the Asset Management Department
+          
+
+          Accomplishments
+          
+          - Investment Fund optimization tool that reflects effects in real-time, visualized as interactive charts for n configurable dimensions of data
+          
+          - Interactive MIS report for monitoring historical performance of funds and monitoring data consistency
+          
+          - Interactive MIS report for monitoring fund manager performance
+
+          - Creation of new types of visualizations and interactivity based on d3.js
+          
+
+          Technology: AngularJS, d3.js, Crossfilter, JavaScript, ECMAScript6 (es6), Visual Studio, MS SQL Server, LESS Stylesheets. 
+          Underscore / Lodash. Integrated in Windows end user client written in DevExpress, CefSharp (Chromium C# integration), 
+          Communication between client and Web Application via Websockets."
+
+      - title: Senior Developer (ext.) at Ista International GmbH (Essen, Germany)
+        timeRange: May 2014 - March 2015  
+        description: "Development of responsive web application that visualizes energy consumption  (heating, power, water) in a beautiful, interactive, touch-interface. Development in an  Agile / SCRUM team with a focus on test driven development. 
+
+          - Responsive development, mobile first methodology  
+
+          - Creation of UI / Interaction concept that scales from mobile to desktop
+          
+          - Test automation with web mobile devices (Android & iOS)  
+
+          - Apache Cordova mobile application  
+
+          
+          Technology: d3.js, HammerJS, AngularJS, Jasmine, Protractor, LESS, Bootstrap."
+
+      - title: Web Developer at Xamarin inc. (acquired by Microsoft) (Aarhus, Denmark) 
+        timeRange: Juli 2013 - December 2013
+        description: "
+          Development of Web Frontend for Cloud based Mobile App Test Center.  
+          Web UI enabled users to upload mobile apps for testing and watching test results for all  mobile phones / test cases requested.  
+
+          Personal responsibilities:
+
+          - Relaunch of web UI in AngularJS  
+
+          - Implementation of business metrics in Mixpanel  
+
+          - Communication via RESTful API with Ruby on Rails backend  
+
+          - Agile / Scrum team
+
+
+          Technology: AngularJS, Ruby on Rails, Chef, Vagrant, PostgreSQL, Resque, Redis, ImageMagick, NGINX, Ubuntu 
+          "
+      - title: Founder & Engineer – GoodCoworking
+        timeRange: June 2012 - March 2016
+        description: "
+          The project GoodCoworking – “The social coworking directory” was a project completely carried out by myself in order 
+          to gain more experience with Ruby on Rails and creating a Social Network to spread the word about a new innovative
+          way for freelancers to work –  at coworking spaces. 
+          Its functionalities included a directory of coworking spaces maintained by users, sharing  success stories about coworking,
+          private messaging, a notification system and full text search.  
+
+
+          Praise by two of the most renowned coworking community experts from the U.S.A.:  
+          
+          „This site is fantastic ... empowers members to demonstrate the true value of their  communities!” -Tony Bacigalupo 
+
+
+          „THIS is the coworking directory that I've been waiting for.” - Alex Hillman  
+          
+
+          The platform consisted of more than 500 coworking spaces and people from more than 800 cities worldwide.  
+          
+
+          Technology:  
+
+          Backend: Ruby on Rails, PostgreSQL, Resque, Redis, NGINX, Ubuntu, Facebook API,  Twitter API, LinkedIn API. 
+          Frontend: HAML, SCSS / SASS Stylesheets, Bootstrap, jQuery  "
+
+      - title: Managing Director – TinyCloud GmbH 
+        timeRange: Since September 2000
+        description: "
+          Development of Web Applications  
+          for customers like Fujitsu Siemens Computers, ADAC, Webasto, ALUMAT, Optorobotix,  ProductsUp etc. "
+        
+      - title: Freelancer Network Engineering / Intranet Development 
+        timeRange:  Aug. 1996 - Aug. 2000  
+        description: "Freelancing with a focus on Network Engineering, Intranet and Internet HTML  Development         
+          Technology: HTML, Perl, MySQL, Adobe / Allaire ColdFusion "
+
+      - title: Internship at the Enterprise Database Company UniData in Denver, Colorado 
+        timeRange: June 1995 - Sept. 1995 
+        description: "
+          Internship at the Enterprise Database Company UniData in Denver, Colorado  (Relational Datenbases, Data Warehousing on Unix, Visual Basic user interface  development).  
+          
+          UniData has been acquired and is now a part of IBM."
+
+  - title: Education 
+    items:
+    - title: Business Administration studies at Brecht University Augsburg
+      timeRange: Sept. 2002 - March 2008 
+      description: "
+        Focus:
+        
+        - Business Management
+
+        - Systems Engineering
+
+        - Business Information Systems  
+        
+
+        Thesis: \"Monetization Strategies for Social Media\".  
+
+        Graduation as Diplom-Kaufmann Univ. (similar to MBA)"
+
+
+  - title: Skills
+    items:
+    - title: Language Skills 
+      description: "
+      - German (Mother tongue)  
+
+      - English (Professional working proficiency, LCCI English for Business - Second  Level Certification)  
+
+      - French (Limited working proficiency)  
+
+      - Spanish (Elementary proficiency)  
+
+      - Italian (Limited working proficiency)"
+
+    - title: Toolset  
+      description: "
+      - Desktop: Linux
+      - IDE: Visual Studio Code (VSCode)
+
+      "
+
+  - title: Awards 
+    items: 
+      - title: 1st price “Startup Weekend Film Industry” (Berlin)
+        timeRange: 2014
+        description: Creation of iOS app & backend for user-contributed dubbing of movie scenes within  one Weekend
+
+  - title: Certifications
+    items:
+      - title: Certified Kubernetes Application Developer (CKAD)
+        timeRange: June 2018
+        description:
+          The Certified Kubernetes Application Developer exam certifies that users can design, build, configure, and expose cloud native applications for Kubernetes. 
+
+
+          It is issued by the Cloud Native Computing Foundation (CNCF), in collaboration with The Linux Foundation.
