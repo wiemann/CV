@@ -18,8 +18,8 @@ import VueMarkdown from "vue-markdown";
   components: { VueMarkdown }
 })
 export default class Section extends Vue {
-  @Prop() private readonly title: string | null;
-  @Prop() private readonly timeRange: string | null;
+  @Prop() private readonly title!: string;
+  @Prop() private readonly timeRange!: string;
 }
 </script>
 
