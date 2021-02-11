@@ -1,4 +1,6 @@
-# cv
+# My Curriculum Vitae
+
+Written as a Yaml file that includes Markdown. Rendered with the help of VueJS.
 
 ## Project setup
 ```
