@@ -14,8 +14,8 @@
           </p>
           <p class="adr">Location: {{ data.address }}</p>
           <p class="timezone">
-            Timezone: {{ data.timeZone
-            }}<span class="tz">{{ data.timeZoneOffset }}</span>
+            Timezone: {{ data.timeZone }}
+            <span class="tz">{{ data.timeZoneOffset }}</span>
           </p>
           <p>Year of Birth: {{ data.birthYear }}</p>
         </div>

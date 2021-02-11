@@ -51,7 +51,8 @@ categories:
         timeRange: May 2014 - March 2015  
         location: Essen, Germany
         sector: Energy
-        description: "Development of responsive web application that visualizes energy consumption  (heating, power, water) in a beautiful, interactive, touch-interface. Development in an  Agile / SCRUM team with a focus on test driven development. 
+        description: "Development of responsive web application that visualizes energy consumption  (heating, power, water) in a beautiful responsive, interactive touch interface. 
+          Development in an  Agile / Scrum team with a focus on test driven development. 
 
           - Responsive development, mobile first methodology  
 
@@ -62,7 +63,7 @@ categories:
           - Apache Cordova mobile application  
 
           
-          Technology: d3.js, HammerJS, AngularJS, Jasmine, Protractor, LESS, Bootstrap."
+          Technology: d3.js, AngularJS, HammerJS, Jasmine, Protractor, LESS, Bootstrap"
 
       - title: Web Developer at Xamarin inc. (acquired by Microsoft) 
         timeRange: Juli 2013 - December 2013
@@ -70,7 +71,8 @@ categories:
         sector: Information Technology
         description: "
           Development of Web Frontend for Cloud based Mobile App Test Center.  
-          Web UI enabled users to upload mobile apps for testing and watching test results for all  mobile phones / test cases requested.  
+          Web UI enabled users to upload mobile apps (Android, iOS) for testing and watching test results for all 
+          mobile phones & test cases.
 
           Personal responsibilities:
 
@@ -80,10 +82,9 @@ categories:
 
           - Communication via RESTful API with Ruby on Rails backend  
 
-          - Agile / Scrum team
-
-
-          Technology: AngularJS, Ruby on Rails, Chef, Vagrant, PostgreSQL, Resque, Redis, ImageMagick, NGINX, Ubuntu 
+          Technology: AngularJS, Ruby on Rails, Chef, Vagrant, PostgreSQL, Resque, Redis, ImageMagick, NGINX, Ubuntu
+          
+          Work in Agile / Scrum team.
           "
       - title: Founder & Engineer – GoodCoworking
         timeRange: June 2012 - March 2016
@@ -117,7 +118,7 @@ categories:
         timeRange: Since September 2000
         description: "
           Development of Web Applications  
-          for customers like Fujitsu Siemens Computers, ADAC, Webasto, ALUMAT, Optorobotix,  ProductsUp etc. "
+          for customers like Fujitsu Siemens Computers, ADAC, Webasto, ALUMAT, Optorobotix, ProductsUp etc. "
         
       - title: Freelancer Network Engineering / Intranet Development 
         timeRange:  Aug. 1996 - Aug. 2000
@@ -136,7 +137,7 @@ categories:
 
   - title: Education 
     items:
-    - title: Business Administration studies at Brecht University
+    - title: Business Administration studies at Universität Augsburg
       location: Augsburg, Germany
       timeRange: Sept. 2002 - March 2008 
       description: "
@@ -149,9 +150,9 @@ categories:
         - Business Information Systems  
         
 
-        Thesis: \"Monetization Strategies for Social Media\".  
+        Topic of thesis: \"Monetization Strategies for Social Media\"
 
-        Graduation as Diplom-Kaufmann Univ. (similar to MBA)"
+        Graduation as Diplom-Kaufmann Univ. / Master in Business Administration"
 
 
   - title: Skills
@@ -182,7 +183,7 @@ categories:
   - title: Awards 
     items: 
       - title: 1st price “Startup Weekend Film Industry” (Berlin)
-        timeRange: 2014
+        timeRange: "2014"
         description: Creation of iOS app & backend for user-contributed dubbing of movie scenes within  one Weekend
 
   - title: Certifications
@@ -193,4 +194,4 @@ categories:
           The Certified Kubernetes Application Developer exam certifies that users can design, build, configure, and expose cloud native applications for Kubernetes. 
 
 
-          It is issued by the Cloud Native Computing Foundation (CNCF), in collaboration with The Linux Foundation.
+          The certification is provided by the Cloud Native Computing Foundation (CNCF), in collaboration with The Linux Foundation.
