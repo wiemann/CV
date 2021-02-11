@@ -1,7 +1,10 @@
 <template>
   <section class="section">
     <h3 v-if="title">{{ title }}</h3>
-    <i v-if="timeRange" class="time-range">{{ timeRange }}</i>
+    <i v-if="timeRange" class="time-range"
+      >{{ timeRange }}
+      <span v-if="sector" class="sector">| Sector: {{ sector }}</span></i
+    >
     <div class="main">
       <vue-markdown>
         <slot></slot>
@@ -20,6 +23,7 @@ import VueMarkdown from "vue-markdown";
 export default class Section extends Vue {
   @Prop() private readonly title!: string;
   @Prop() private readonly timeRange!: string;
+  @Prop() private readonly sector!: string;
 }
 </script>
 

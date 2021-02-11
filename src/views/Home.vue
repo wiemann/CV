@@ -45,6 +45,7 @@
           :key="index"
           :title="item.title"
           :timeRange="item.timeRange"
+          :sector="item.sector"
         >
           {{ item.description }}
         </Section>

@@ -14,6 +14,7 @@ interface CVItem {
   title: string;
   description: string;
   timeRange: string;
+  sector: string;
 }
 
 export interface CVData {

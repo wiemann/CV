@@ -26,10 +26,9 @@ categories:
 
       - title: Senior Developer (ext.) – Data Visualization at Zürcher Kantonalbank (Zürich, Schweiz)
         timeRange: March 2015 – December 2016
+        sector: Finance
         description: "
-          Concept and implementation of interactive data visualizations for Asset Management (> 100 bn. Swiss Francs in assets)
-          
-          Work in Agile / Scrum Team within the Asset Management Department
+          Concept and implementation of interactive data visualizations for Asset Management (> 100 bn. Swiss Francs in assets) at ZKB (Switzerland's 4th largest Bank).
           
 
           Accomplishments
@@ -49,6 +48,7 @@ categories:
 
       - title: Senior Developer (ext.) at Ista International GmbH (Essen, Germany)
         timeRange: May 2014 - March 2015  
+        sector: Energy
         description: "Development of responsive web application that visualizes energy consumption  (heating, power, water) in a beautiful, interactive, touch-interface. Development in an  Agile / SCRUM team with a focus on test driven development. 
 
           - Responsive development, mobile first methodology  
@@ -64,6 +64,7 @@ categories:
 
       - title: Web Developer at Xamarin inc. (acquired by Microsoft) (Aarhus, Denmark) 
         timeRange: Juli 2013 - December 2013
+        sector: Information Technology
         description: "
           Development of Web Frontend for Cloud based Mobile App Test Center.  
           Web UI enabled users to upload mobile apps for testing and watching test results for all  mobile phones / test cases requested.  
@@ -83,6 +84,7 @@ categories:
           "
       - title: Founder & Engineer – GoodCoworking
         timeRange: June 2012 - March 2016
+        sector: Real Estate
         description: "
           The project GoodCoworking – “The social coworking directory” was a project completely carried out by myself in order 
           to gain more experience with Ruby on Rails and creating a Social Network to spread the word about a new innovative
@@ -114,12 +116,13 @@ categories:
           for customers like Fujitsu Siemens Computers, ADAC, Webasto, ALUMAT, Optorobotix,  ProductsUp etc. "
         
       - title: Freelancer Network Engineering / Intranet Development 
-        timeRange:  Aug. 1996 - Aug. 2000  
+        timeRange:  Aug. 1996 - Aug. 2000
         description: "Freelancing with a focus on Network Engineering, Intranet and Internet HTML  Development         
           Technology: HTML, Perl, MySQL, Adobe / Allaire ColdFusion "
 
       - title: Internship at the Enterprise Database Company UniData in Denver, Colorado 
         timeRange: June 1995 - Sept. 1995 
+        sector: Information Technology
         description: "
           Internship at the Enterprise Database Company UniData in Denver, Colorado  (Relational Datenbases, Data Warehousing on Unix, Visual Basic user interface  development).  
           
