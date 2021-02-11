@@ -7,7 +7,8 @@ describe("Section.vue", () => {
       propsData: {
         title: "Here goes the title",
         timeRange: "2030",
-        sector: "Tech"
+        sector: "Tech",
+        location: "Munich"
       },
       slots: {
         default: "This is the description."
@@ -18,5 +19,6 @@ describe("Section.vue", () => {
     expect(wrapper.find(".main").text()).toMatch("This is the description.");
     expect(wrapper.find(".time-range").text()).toMatch("2030");
     expect(wrapper.find(".sector").text()).toMatch("Tech");
+    expect(wrapper.find(".location").text()).toMatch("Munich");
   });
 });

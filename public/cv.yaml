@@ -24,9 +24,10 @@ categories:
           
           Access to prototypes for demonstration purposes can be provided on demand.
 
-      - title: Senior Developer (ext.) – Data Visualization at Zürcher Kantonalbank (Zürich, Schweiz)
+      - title: Senior Developer (ext.) – Data Visualization at Zürcher Kantonalbank
         timeRange: March 2015 – December 2016
         sector: Finance
+        location: Zürich, Switzerland
         description: "
           Concept and implementation of interactive data visualizations for Asset Management (> 100 bn. Swiss Francs in assets) at ZKB (Switzerland's 4th largest Bank).
           
@@ -46,8 +47,9 @@ categories:
           Underscore / Lodash. Integrated in Windows end user client written in DevExpress, CefSharp (Chromium C# integration), 
           Communication between client and Web Application via Websockets."
 
-      - title: Senior Developer (ext.) at Ista International GmbH (Essen, Germany)
+      - title: Senior Developer (ext.) at Ista International GmbH
         timeRange: May 2014 - March 2015  
+        location: Essen, Germany
         sector: Energy
         description: "Development of responsive web application that visualizes energy consumption  (heating, power, water) in a beautiful, interactive, touch-interface. Development in an  Agile / SCRUM team with a focus on test driven development. 
 
@@ -62,8 +64,9 @@ categories:
           
           Technology: d3.js, HammerJS, AngularJS, Jasmine, Protractor, LESS, Bootstrap."
 
-      - title: Web Developer at Xamarin inc. (acquired by Microsoft) (Aarhus, Denmark) 
+      - title: Web Developer at Xamarin inc. (acquired by Microsoft) 
         timeRange: Juli 2013 - December 2013
+        location: Aarhus, Denmark
         sector: Information Technology
         description: "
           Development of Web Frontend for Cloud based Mobile App Test Center.  
@@ -85,6 +88,7 @@ categories:
       - title: Founder & Engineer – GoodCoworking
         timeRange: June 2012 - March 2016
         sector: Real Estate
+        location: Munich, Germany
         description: "
           The project GoodCoworking – “The social coworking directory” was a project completely carried out by myself in order 
           to gain more experience with Ruby on Rails and creating a Social Network to spread the word about a new innovative
@@ -117,11 +121,13 @@ categories:
         
       - title: Freelancer Network Engineering / Intranet Development 
         timeRange:  Aug. 1996 - Aug. 2000
+        location: Munich, Germany
         description: "Freelancing with a focus on Network Engineering, Intranet and Internet HTML  Development         
           Technology: HTML, Perl, MySQL, Adobe / Allaire ColdFusion "
 
-      - title: Internship at the Enterprise Database Company UniData in Denver, Colorado 
+      - title: Internship at the Enterprise Database Company UniData
         timeRange: June 1995 - Sept. 1995 
+        location:  Denver, Colorado, U.S.A.
         sector: Information Technology
         description: "
           Internship at the Enterprise Database Company UniData in Denver, Colorado  (Relational Datenbases, Data Warehousing on Unix, Visual Basic user interface  development).  
@@ -130,7 +136,8 @@ categories:
 
   - title: Education 
     items:
-    - title: Business Administration studies at Brecht University Augsburg
+    - title: Business Administration studies at Brecht University
+      location: Augsburg, Germany
       timeRange: Sept. 2002 - March 2008 
       description: "
         Focus:

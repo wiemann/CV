@@ -46,6 +46,7 @@
           :title="item.title"
           :timeRange="item.timeRange"
           :sector="item.sector"
+          :location="item.location"
         >
           {{ item.description }}
         </Section>
