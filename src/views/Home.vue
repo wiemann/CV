@@ -51,7 +51,10 @@
       </div>
     </main>
     <footer>
-      <p class="last-update">Last update: {{ data.lastUpdate }}</p>
+      <p class="last-update">
+        Last update: {{ data.lastUpdate }} |
+        <a :href="data.source" targt="_blank">Source on GitHub</a>
+      </p>
     </footer>
   </div>
 </template>
