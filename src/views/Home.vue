@@ -23,6 +23,7 @@
       <div class="profile-picture-holder">
         <img
           class="profile-picture"
+          v-if="data.picture"
           :alt="data.name"
           :title="data.name"
           :src="data.picture.src"
@@ -59,6 +60,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import Section from "@/components/Section.vue";
 import yaml from "js-yaml";
+import { CVData } from "@/interfaces";
 
 @Component({
   components: {
@@ -66,13 +68,13 @@ import yaml from "js-yaml";
   }
 })
 export default class CV extends Vue {
-  private data: any = {};
+  private data: CVData = {} as CVData;
 
   load() {
     fetch("/cv.yaml")
       .then(response => response.text())
       .then(text => yaml.load(text))
-      .then(data => (this.data = data));
+      .then(data => (this.data = data as CVData));
   }
 
   created() {
