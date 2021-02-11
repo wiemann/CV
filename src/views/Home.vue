@@ -60,7 +60,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue, Watch } from "vue-property-decorator";
 import Section from "@/components/Section.vue";
 import yaml from "js-yaml";
 import { CVData } from "@/interfaces";
@@ -78,6 +78,11 @@ export default class CV extends Vue {
       .then(response => response.text())
       .then(text => yaml.load(text))
       .then(data => (this.data = data as CVData));
+  }
+
+  @Watch("data.name")
+  onNameChange(name: string) {
+    document.title = `CV of ${name}`;
   }
 
   created() {
