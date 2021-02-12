@@ -34,12 +34,20 @@
       </div>
     </header>
     <main>
+      <ul class="toc">
+        <li v-for="category in data.categories" :key="category.title">
+          <a :href="`#${titleToAnchor(category.title)}`">{{
+            category.title
+          }}</a>
+        </li>
+      </ul>
+
       <div
         v-for="(category, index) in data.categories"
         :key="index"
         class="chapter"
       >
-        <h2>{{ category.title }}</h2>
+        <h2 :id="`${titleToAnchor(category.title)}`">{{ category.title }}</h2>
         <Section
           v-for="(item, index) in category.items"
           :key="index"
@@ -71,6 +79,11 @@ import cv from "@/cv.yaml";
 @Component({
   components: {
     Section
+  },
+  methods: {
+    titleToAnchor: (title: string) => {
+      return title.toLowerCase();
+    }
   }
 })
 export default class CV extends Vue {
@@ -103,6 +116,16 @@ export default class CV extends Vue {
       background: #eee;
       border-radius: 50%;
       margin: 1rem;
+    }
+  }
+  ul.toc {
+    list-style: none;
+    padding: 0.5rem;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    li {
+      display: inline;
+      margin-right: 1rem;
     }
   }
 
