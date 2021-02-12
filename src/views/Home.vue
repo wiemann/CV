@@ -64,8 +64,9 @@
 <script lang="ts">
 import { Component, Vue, Watch } from "vue-property-decorator";
 import Section from "@/components/Section.vue";
-import yaml from "js-yaml";
 import { CVData } from "@/interfaces";
+// @ts-ignore
+import cv from "@/cv.yaml";
 
 @Component({
   components: {
@@ -73,22 +74,11 @@ import { CVData } from "@/interfaces";
   }
 })
 export default class CV extends Vue {
-  private data: CVData = {} as CVData;
+  private data: CVData = cv;
 
-  load() {
-    fetch("/cv.yaml")
-      .then(response => response.text())
-      .then(text => yaml.load(text))
-      .then(data => (this.data = data as CVData));
-  }
-
-  @Watch("data.name")
+  @Watch("data.name", { immediate: true })
   onNameChange(name: string) {
     document.title = `CV of ${name}`;
-  }
-
-  created() {
-    this.load();
   }
 }
 </script>
