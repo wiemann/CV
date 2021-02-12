@@ -111,6 +111,8 @@ export default class CV extends Vue {
     .profile-picture {
       border: 1px solid silver;
       background: #eee;
+      border-radius: 50%;
+      margin: 1rem;
     }
   }
 
