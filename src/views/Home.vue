@@ -37,7 +37,7 @@
       <ul class="toc">
         <li v-for="category in data.categories" :key="category.title">
           <a :href="`#${titleToAnchor(category.title)}`">{{
-            category.title
+            category.title.split(" ")[0]
           }}</a>
         </li>
       </ul>
@@ -115,7 +115,8 @@ export default class CV extends Vue {
       border: 1px solid silver;
       background: #eee;
       border-radius: 50%;
-      margin: 1rem;
+      display: block;
+      margin: auto;
     }
   }
   ul.toc {
@@ -125,13 +126,16 @@ export default class CV extends Vue {
     border-bottom: 1px solid gray;
     li {
       display: inline;
-      margin-right: 1rem;
+      margin-right: 0.5rem;
     }
   }
 
   @media only screen and (min-width: 600px) {
     header {
       flex-direction: row;
+      .profile-picture {
+        margin: 1rem;
+      }
     }
   }
 }

@@ -32,7 +32,7 @@ export default class Section extends Vue {
 <style scoped lang="scss">
 .section {
   h3 {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 </style>
