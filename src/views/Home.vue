@@ -157,9 +157,7 @@ export default class CV extends Vue {
     position: -webkit-sticky;
     position: sticky;
     top: -1px;
-    padding: 0.5rem;
-    padding-left: 0;
-    padding-top: 0.75rem;
+    padding: 0.75rem 0 0.5rem 0;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     background: white;
