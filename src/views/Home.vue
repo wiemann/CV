@@ -25,7 +25,6 @@
           class="profile-picture"
           v-if="data.picture"
           :alt="data.name"
-          :title="data.name"
           :src="data.picture.src"
           :srcset="`${data.picture.src} 1x, ${data.picture.srcHd} 2x`"
           :width="data.picture.width"
@@ -35,6 +34,17 @@
     </header>
     <main>
       <ul class="toc">
+        <li class="toc-picture">
+          <a href="#">
+            <img
+              class="profile-picture"
+              v-if="data.picture"
+              :alt="data.name"
+              :src="data.picture.src"
+              :srcset="`${data.picture.src} 1x, ${data.picture.srcHd} 2x`"
+            />
+          </a>
+        </li>
         <li class="toc-name">
           <a href="#">{{ data.name }}</a>
         </li>
@@ -134,13 +144,13 @@ export default class CV extends Vue {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .profile-picture {
-      border: 1px solid silver;
-      background: #eee;
-      border-radius: 50%;
-      display: block;
-      margin: auto;
-    }
+  }
+  .profile-picture {
+    border: 1px solid silver;
+    background: #eee;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
   }
   ul.toc {
     list-style: none;
@@ -148,19 +158,36 @@ export default class CV extends Vue {
     position: sticky;
     top: -1px;
     padding: 0.5rem;
+    padding-left: 0;
+    padding-top: 0.75rem;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     background: white;
-    .toc-name {
+    white-space: nowrap;
+    .toc-name,
+    .toc-picture {
       display: none;
+      .profile-picture {
+        height: 1.5em;
+        width: 1.5em;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    .toc-picture {
+      // padding-right: 1em;
+      vertical-align: middle;
     }
     li {
       display: inline;
       margin-right: 0.5rem;
     }
     &.fixated {
-      .toc-name {
+      .toc-picture {
         display: inline;
+      }
+      .toc-name {
+        display: none;
       }
     }
   }
@@ -170,6 +197,14 @@ export default class CV extends Vue {
       flex-direction: row;
       .profile-picture {
         margin: 1rem;
+      }
+    }
+    .toc {
+      .toc-picture {
+        display: none !important;
+      }
+      .toc-name {
+        display: inline !important;
       }
     }
   }
