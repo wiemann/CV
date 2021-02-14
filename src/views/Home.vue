@@ -35,6 +35,9 @@
     </header>
     <main>
       <ul class="toc">
+        <li class="toc-name">
+          <a href="#">{{ data.name }}</a>
+        </li>
         <li v-for="category in data.categories" :key="category.title">
           <a :href="`#${titleToAnchor(category.title)}`">{{
             shortenTitle(category.title)
@@ -93,10 +96,25 @@ function shortenTitle(title: string) {
 })
 export default class CV extends Vue {
   private data: CVData = cv;
+  private fixatedObserver: IntersectionObserver | null = null;
 
   @Watch("data.name", { immediate: true })
   onNameChange(name: string) {
     document.title = `CV of ${name}`;
+  }
+
+  private mounted() {
+    const observer = new IntersectionObserver(
+      ([e]) => e.target.classList.toggle("fixated", e.intersectionRatio < 1),
+      { threshold: [1] }
+    );
+
+    observer.observe(document.querySelector(".toc") as HTMLElement);
+    this.fixatedObserver = observer;
+  }
+
+  private beforeDestroy() {
+    this.fixatedObserver?.disconnect();
   }
 }
 </script>
@@ -133,9 +151,17 @@ export default class CV extends Vue {
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
     background: white;
+    .toc-name {
+      display: none;
+    }
     li {
       display: inline;
       margin-right: 0.5rem;
+    }
+    &.fixated {
+      .toc-name {
+        display: inline;
+      }
     }
   }
 
