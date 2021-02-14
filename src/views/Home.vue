@@ -109,7 +109,7 @@ export default class CV extends Vue {
   private fixatedObserver: IntersectionObserver | null = null;
 
   @Watch("data.name", { immediate: true })
-  onNameChange(name: string) {
+  private onNameChange(name: string) {
     document.title = `CV of ${name}`;
   }
 
