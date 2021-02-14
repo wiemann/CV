@@ -219,7 +219,7 @@ export default class CV extends Vue {
         margin: 1rem;
       }
     }
-    .toc {
+    .toc.fixated {
       .toc-name {
         display: inline !important;
       }
