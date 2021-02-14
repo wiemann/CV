@@ -37,7 +37,7 @@
       <ul class="toc">
         <li v-for="category in data.categories" :key="category.title">
           <a :href="`#${titleToAnchor(category.title)}`">{{
-            category.title.split(" ")[0]
+            shortenTitle(category.title)
           }}</a>
         </li>
       </ul>
@@ -76,14 +76,19 @@ import { CVData } from "@/interfaces";
 // @ts-ignore
 import cv from "@/cv.yaml";
 
+function shortenTitle(title: string) {
+  return title.split(" ")[0];
+}
+
 @Component({
   components: {
     Section
   },
   methods: {
     titleToAnchor: (title: string) => {
-      return title.toLowerCase();
-    }
+      return shortenTitle(title).toLowerCase();
+    },
+    shortenTitle
   }
 })
 export default class CV extends Vue {
@@ -121,9 +126,13 @@ export default class CV extends Vue {
   }
   ul.toc {
     list-style: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
     padding: 0.5rem;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
+    background: white;
     li {
       display: inline;
       margin-right: 0.5rem;
