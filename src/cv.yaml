@@ -1,11 +1,12 @@
 name: Matthias Wiemann
-title: Web Developer / Software Engineer
+title: Senior Full Stack Developer
 email: mat@wiemann.name
 phone: +49 170 79 77 79 1
 address: Munich, Germany
-timeZone: CET (Central European Time)
+timeZone: CET
 timeZoneOffset: "+01:00"
 birthYear: 1977
+birthCity: Munich, Germany
 lastUpdate: February 2021
 picture:
   src: /images/matthias_wiemann_sd.jpg

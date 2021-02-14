@@ -17,7 +17,7 @@
             Timezone: {{ data.timeZone }}
             <span class="tz">{{ data.timeZoneOffset }}</span>
           </p>
-          <p>Year of Birth: {{ data.birthYear }}</p>
+          <p>Born: {{ data.birthYear }}, {{ data.birthCity }}</p>
         </div>
       </div>
       <div class="profile-picture-holder">
@@ -60,7 +60,10 @@
         :key="index"
         class="chapter"
       >
-        <h2 :id="`${titleToAnchor(category.title)}`">{{ category.title }}</h2>
+        <h2>
+          <a class="anchor" :id="`${titleToAnchor(category.title)}`"></a
+          >{{ category.title }}
+        </h2>
         <Section
           v-for="(item, index) in category.items"
           :key="index"
@@ -132,7 +135,13 @@ export default class CV extends Vue {
 <style scoped lang="scss">
 .cv {
   h2 {
-    margin-top: 3rem;
+    padding-top: 2rem;
+    a.anchor {
+      display: block;
+      position: relative;
+      top: -4rem;
+      visibility: hidden;
+    }
   }
   .last-update {
     padding-top: 0.5rem;
@@ -144,6 +153,17 @@ export default class CV extends Vue {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    .vcard {
+      margin-bottom: 1rem;
+      p {
+        margin: 0;
+      }
+      .title,
+      .tel,
+      .timezone {
+        margin-bottom: 1rem;
+      }
+    }
   }
   .profile-picture {
     border: 1px solid silver;
@@ -162,6 +182,7 @@ export default class CV extends Vue {
     border-bottom: 1px solid gray;
     background: white;
     white-space: nowrap;
+    user-select: none;
     .toc-name,
     .toc-picture {
       display: none;
@@ -170,6 +191,7 @@ export default class CV extends Vue {
         width: 1.5em;
         display: inline-block;
         vertical-align: middle;
+        image-rendering: crisp-edges;
       }
     }
     .toc-picture {
@@ -198,9 +220,6 @@ export default class CV extends Vue {
       }
     }
     .toc {
-      .toc-picture {
-        display: none !important;
-      }
       .toc-name {
         display: inline !important;
       }
