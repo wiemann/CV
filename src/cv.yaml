@@ -17,13 +17,50 @@ source: https://github.com/wiemann/CV
 categories:
   - title: Work Experience
     items:
-      - timeRange: January 2017 - Now
+      - timeRange: March 2020 - February 2021
+        title: MakeNews Prototype
+        description: "Makenews is a Platform for sharing Personal News / Opinions via a Web App (PWA).
+
+          The Platform allows users to record Videos from their Mobile Device and Desktop Browser via WebRTC.
+          Videos are being transcoded, transcribed and analyzed by AI to flag not allowed content.
+
+          Users are able to search the transcripts of videos via ElasticSearch.
+          Common Social Platform capabilities (liking content / following users) are implemented.
+
+          Videos are presented to a user with a Ranking algorithm that takes age and popularity of content into consideration.
+          The user experience is optimized by having a smooth swipe-to scroll interface à la Tiktok, 
+          and the Responsive Web App scales from small Mobile Android/IOS all the way to 50 inch Android TV screens.
+
+          
+          Backend: Ruby On Rails 6, Google Cloud for AI, S3 compliant Storage, Firebase Authentication, Imagemagick, Ffmpeg
+          
+          Frontend: VueJS, VideoJS, HLS/H264/MP4 Video, CSS FlexBox, Variables
+          "
+          
+          
+      - timeRange: August 2018 - February 2020
+        title: DOVE - Data Oriented Video Editing Showcase
+        description: Prototype of Interactive Video Cutting Platform. 
+          Allows users to upload their ActionCam (GoPro) recording, 
+          transcodes video to low bandwidth version, extracts GPS & Gyroscope, Accelerometer Data, visualizes
+          with the help of Interactive Charts (VueJS / D3.js / SVG / HammerJS) and allows users to do Multivariate filtering by
+          selecting parts in Charts. 
+          
+          The platform turns video cutting from a minute / hour long task into a 100 millisecond (near realtime) operation.
+          
+          Data Processing on the Frontend is done with ReactiveX / RxJS and on the backend via Kubernetes Jobs and continerized Applications
+          with GraphQL / GoLang / NodeJS / JWT Backend and optimized Data Delivery through the binary protocol Protocol Buffers (Protobuf), 
+          Media Storage on AWS S3, hosting on DigitalOcean Kubernetes with Load Balancing.
+
+      - timeRange: January 2017 - June 2018
+        title: Containerization / Kubernetes  
         description:
-          Work on prototypes for Interactive Data Visualisation with VueJS, React, Go (Google GoLang) and 
-          GraphQL, Kubernetes / Docker, Google Cloud and Amazon Web Services (AWS).
-          
-          
-          Access to prototypes for demonstration purposes can be provided on demand.
+          Learning / Practicing [Certified Kubernetes Application Developer](#certifications) (Includes Docker, design of scalable, containerized system architectures)
+
+      - timeRange: January 2017 - December 2017
+        title: Sabbatical
+        description:
+          Training & Teaching SUP Racing, Trip through India.
 
       - title: Senior Developer (ext.) – Data Visualization at Zürcher Kantonalbank
         timeRange: March 2015 – December 2016
@@ -191,8 +228,26 @@ categories:
     items:
       - title: Certified Kubernetes Application Developer (CKAD)
         timeRange: June 2018
-        description:
+        description: "
           The Certified Kubernetes Application Developer exam certifies that users can design, build, configure, and expose cloud native applications for Kubernetes. 
 
 
           The certification is provided by the Cloud Native Computing Foundation (CNCF), in collaboration with The Linux Foundation.
+
+
+          A Certified Kubernetes Application Developer can define application resources and use core primitives to build, monitor, and troubleshoot scalable applications and tools in Kubernetes.
+
+
+          The exam assumes knowledge of, but does not test for, container runtimes and a microservice architecture.
+
+
+          The successful candidate is comfortable using:
+
+          - An OCI-Compliant Container Runtime, such as Docker or rkt.
+          
+          - Cloud native application concepts and architectures.
+          
+          - A programming language, such as Python, Node.js, Go, or Java.
+
+
+          The certification program allows users to demonstrate their competence in a hands-on, command-line environment. The purpose of the Certified Kubernetes Application Developer (CKAD) program is to provide assurance that CKADs have the skills, knowledge, and competency to perform the responsibilities of Kubernetes application developers."
