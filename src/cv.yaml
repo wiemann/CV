@@ -17,6 +17,10 @@ source: https://github.com/wiemann/CV
 categories:
   - title: Work Experience
     items:
+      - timeRange: March 2021
+        title: Web Development at Stihl Corporate Startup (Remote)
+        description: Implementation of custom ElasticSearch fulltext search for their eCommerce Website and further additions to Ruby on Rails + Vue.js Website.
+        
       - timeRange: March 2020 - February 2021
         title: MakeNews Prototype
         description: "Makenews is a Platform for sharing Personal News / Opinions via a Web App (PWA).
