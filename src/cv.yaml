@@ -21,6 +21,7 @@ categories:
         title: Web Development at Stihl Corporate Startup (Remote)
         description: "Implementation of custom ElasticSearch fulltext search for their eCommerce Website, improve conversion rate, usability and implement geolocation functionality.
         
+        
           Backend: Ruby on Rails, Elastic Search, Postgres
           
           Frontend: TypeScript, VueJS, Leaflet.js, SCSS
