@@ -17,9 +17,15 @@ source: https://github.com/wiemann/CV
 categories:
   - title: Work Experience
     items:
-      - timeRange: March 2021
+      - timeRange: March 2021 - now (ongoing)
         title: Web Development at Stihl Corporate Startup (Remote)
-        description: Implementation of custom ElasticSearch fulltext search for their eCommerce Website and further additions to Ruby on Rails + Vue.js Website.
+        description: Implementation of custom ElasticSearch fulltext search for their eCommerce Website, improve conversion rate, usability and implement geolocation functionality.
+        
+          Backend: Ruby on Rails, Elastic Search, Postgres
+          
+          Frontend: TypeScript, VueJS, Leaflet.js, SCSS
+          
+          Methodology: Scrum / Agile
         
       - timeRange: March 2020 - February 2021
         title: MakeNews Prototype
