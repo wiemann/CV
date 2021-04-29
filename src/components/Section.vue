@@ -6,7 +6,16 @@
       <span v-if="sector" class="sector"> | Sector: {{ sector }}</span>
       <span v-if="location" class="location"> | {{ location }}</span>
     </i>
-    <div><img :src="img" v-if="img" class="image" :alt="title" /></div>
+    <div>
+      <img
+        :src="img"
+        v-if="img"
+        class="image"
+        :alt="title"
+        width="150"
+        height="150"
+      />
+    </div>
 
     <div class="main">
       <vue-markdown>
