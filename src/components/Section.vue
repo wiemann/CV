@@ -6,6 +6,8 @@
       <span v-if="sector" class="sector"> | Sector: {{ sector }}</span>
       <span v-if="location" class="location"> | {{ location }}</span>
     </i>
+    <div><img :src="img" v-if="img" class="image" /></div>
+
     <div class="main">
       <vue-markdown>
         <slot></slot>
@@ -26,6 +28,7 @@ export default class Section extends Vue {
   @Prop() private readonly timeRange!: string;
   @Prop() private readonly sector!: string;
   @Prop() private readonly location!: string;
+  @Prop() private readonly img!: string;
 }
 </script>
 
@@ -33,6 +36,15 @@ export default class Section extends Vue {
 .section {
   h3 {
     margin-top: 2rem;
+  }
+  img {
+    display: block;
+    max-width: 150px;
+    max-height: 150px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 </style>

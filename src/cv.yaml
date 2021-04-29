@@ -240,6 +240,7 @@ categories:
     items:
       - title: Certified Kubernetes Application Developer (CKAD)
         timeRange: June 2018
+        img: '/images/tech/ckad.svg'
         description: "
           The Certified Kubernetes Application Developer exam certifies that users can design, build, configure, and expose cloud native applications for Kubernetes. 
 
