@@ -265,9 +265,10 @@ export default class CV extends Vue {
     .toc-name,
     .toc-picture {
       display: none;
+      overflow: hidden;
       .profile-picture {
-        height: 1.5em;
-        width: 1.5em;
+        height: 1.5rem;
+        width: 1.5rem;
         display: inline-block;
         vertical-align: middle;
         image-rendering: crisp-edges;
@@ -290,13 +291,11 @@ export default class CV extends Vue {
       }
     }
   }
-  .ckad-logo {
-    max-width: 150px;
-    max-height: 150px;
-  }
   .tech-logos {
     display: flex;
     margin-bottom: 20px;
+    width: 100%;
+    overflow: scroll;
   }
 
   @media only screen and (min-width: 600px) {
