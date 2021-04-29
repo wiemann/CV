@@ -6,7 +6,7 @@
       <span v-if="sector" class="sector"> | Sector: {{ sector }}</span>
       <span v-if="location" class="location"> | {{ location }}</span>
     </i>
-    <div><img :src="img" v-if="img" class="image" /></div>
+    <div><img :src="img" v-if="img" class="image" :alt="title" /></div>
 
     <div class="main">
       <vue-markdown>
