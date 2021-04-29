@@ -51,7 +51,7 @@ export default class Section extends Vue {
     min-height: 60px;
   }
   svg {
-    max-width: 50px;
+    width: 50px;
     max-height: 50px;
     path {
       fill: white;
